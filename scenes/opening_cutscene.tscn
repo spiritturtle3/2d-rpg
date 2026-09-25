@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://db1mga1i6n6cg"]
+
+[ext_resource type="Script" uid="uid://d3ylxhaybog40" path="res://cutscenes/scripts/opening_cutscene.gd" id="1_7qsw6"]
+[ext_resource type="Texture2D" uid="uid://bw1dlt3t30iak" path="res://cutscenes/opening/op_1.png" id="1_oebjb"]
+
+[node name="OpeningCutscene" type="CanvasLayer" unique_id=1256474332]
+script = ExtResource("1_7qsw6")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=936517552]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_oebjb")
+expand_mode = 1
+stretch_mode = 6

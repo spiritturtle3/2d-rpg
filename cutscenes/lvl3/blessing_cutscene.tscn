@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://obvl0ydo8bcg"]
+
+[ext_resource type="Script" uid="uid://dd2o7crtj4nxc" path="res://cutscenes/lvl3/blessing_cutscene.gd" id="1_5vc5x"]
+[ext_resource type="Texture2D" uid="uid://caakl41gmppbb" path="res://cutscenes/lvl3/ct_1.png" id="2_5vc5x"]
+
+[node name="blessing_cutscene" type="CanvasLayer" unique_id=1256474332]
+layer = 100
+script = ExtResource("1_5vc5x")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=936517552]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_5vc5x")
+expand_mode = 1
+stretch_mode = 6

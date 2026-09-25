@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://272a52v5u6hw"]
+
+[ext_resource type="Script" uid="uid://cks67oyi4ib8b" path="res://scripts/boss_health_bar.gd" id="1_6bohj"]
+[ext_resource type="Texture2D" uid="uid://86lo4jfp5j2s" path="res://assets/images/ui/under_boss.png" id="1_m257h"]
+[ext_resource type="Texture2D" uid="uid://823ikky3736h" path="res://assets/images/ui/over_boss.png" id="2_6bohj"]
+
+[node name="BossHealthBar" type="Node2D" unique_id=1568483181]
+script = ExtResource("1_6bohj")
+
+[node name="under" type="Sprite2D" parent="." unique_id=1550079546]
+position = Vector2(23.5, 9.25)
+scale = Vector2(2.1170216, 1.6851852)
+texture = ExtResource("1_m257h")
+
+[node name="over" type="Sprite2D" parent="." unique_id=1382965217 groups=["boss_health_bar"]]
+position = Vector2(-50, -8)
+scale = Vector2(1.9746616, 1.6710539)
+texture = ExtResource("2_6bohj")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 70, 20)

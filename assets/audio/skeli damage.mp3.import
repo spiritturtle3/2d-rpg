@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ddnff3i0c37fm"
+path="res://godot/imported/skeli damage.mp3-c7a489c87b35791d607e5be1fc7d3451.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/skeli damage.mp3"
+dest_files=["res://godot/imported/skeli damage.mp3-c7a489c87b35791d607e5be1fc7d3451.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

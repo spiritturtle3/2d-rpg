@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://doyenru1xq5v8"]
+
+[ext_resource type="Script" uid="uid://e6hejbut018x" path="res://cutscenes/scripts/lvl_2_cutscene.gd" id="1_w7qdw"]
+[ext_resource type="Texture2D" uid="uid://bayj6bp2l8j2n" path="res://cutscenes/lvl2/lvl2_cutscene.png" id="2_2iimk"]
+
+[node name="lvl2_cutscene" type="CanvasLayer" unique_id=1256474332]
+script = ExtResource("1_w7qdw")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=936517552]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_2iimk")
+expand_mode = 1
+stretch_mode = 6

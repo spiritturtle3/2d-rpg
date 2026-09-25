@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://cepski3wvyomm"]
+
+[ext_resource type="Script" uid="uid://dxplr73opmqca" path="res://scripts/hud.gd" id="1_ahhtf"]
+[ext_resource type="Texture2D" uid="uid://dya64oxsh63rp" path="res://assets/images/ui/Heart_Full.png" id="2_oo0fn"]
+[ext_resource type="PackedScene" uid="uid://272a52v5u6hw" path="res://scenes/boss_health_bar.tscn" id="3_5ysmq"]
+[ext_resource type="Texture2D" uid="uid://m7cwfdm7n430" path="res://assets/images/ui/textbox.png" id="4_uo2fv"]
+[ext_resource type="FontFile" uid="uid://tr22wetgo0xv" path="res://assets/images/ui/LowresPixel-Regular.otf" id="5_047uy"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5pdws"]
+texture = ExtResource("4_uo2fv")
+
+[node name="HUD" type="CanvasLayer" unique_id=1735296947 groups=["hud"]]
+script = ExtResource("1_ahhtf")
+
+[node name="Hearts" type="HBoxContainer" parent="." unique_id=1979765247]
+offset_left = 30.0
+offset_right = 126.0
+offset_bottom = 16.0
+scale = Vector2(3, 3)
+
+[node name="Heart1" type="TextureRect" parent="Hearts" unique_id=1743284216]
+layout_mode = 2
+texture = ExtResource("2_oo0fn")
+stretch_mode = 2
+
+[node name="Heart2" type="TextureRect" parent="Hearts" unique_id=1440905484]
+layout_mode = 2
+texture = ExtResource("2_oo0fn")
+stretch_mode = 2
+
+[node name="Heart3" type="TextureRect" parent="Hearts" unique_id=1677037915]
+layout_mode = 2
+texture = ExtResource("2_oo0fn")
+stretch_mode = 2
+
+[node name="Heart4" type="TextureRect" parent="Hearts" unique_id=1474579815]
+layout_mode = 2
+texture = ExtResource("2_oo0fn")
+stretch_mode = 2
+
+[node name="Heart5" type="TextureRect" parent="Hearts" unique_id=2080174952]
+layout_mode = 2
+texture = ExtResource("2_oo0fn")
+stretch_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=408265080]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="BossHealthBar" parent="." unique_id=1568483181 instance=ExtResource("3_5ysmq")]
+position = Vector2(760, 752)
+scale = Vector2(4, 4)
+
+[node name="PrayerPopup" type="PanelContainer" parent="." unique_id=461854740]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -752.0
+offset_top = -244.0
+offset_right = 452.0
+offset_bottom = -52.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_5pdws")
+
+[node name="DialogueContent" type="Control" parent="PrayerPopup" unique_id=523721535]
+layout_mode = 2
+
+[node name="Question" type="Label" parent="PrayerPopup/DialogueContent" unique_id=307792292]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 40.0
+offset_right = 580.5
+offset_bottom = 88.0
+scale = Vector2(2, 2)
+theme_override_fonts/font = ExtResource("5_047uy")
+text = "Do you want to pray?"
+
+[node name="Yes" type="Button" parent="PrayerPopup/DialogueContent" unique_id=1092078043]
+layout_mode = 0
+offset_left = 503.99997
+offset_top = 79.999985
+offset_right = 555.7647
+offset_bottom = 112.94115
+scale = Vector2(1.5, 1.5)
+theme_override_fonts/font = ExtResource("5_047uy")
+text = "Yes"
+
+[node name="No" type="Button" parent="PrayerPopup/DialogueContent" unique_id=1655034953]
+layout_mode = 0
+offset_left = 616.0
+offset_top = 79.999985
+offset_right = 667.76465
+offset_bottom = 112.94115
+scale = Vector2(1.5, 1.5)
+theme_override_fonts/font = ExtResource("5_047uy")
+text = "No"
