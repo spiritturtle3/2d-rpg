@@ -1,34 +1,33 @@
-One Slash Man: There's A Way Back Home
+⚔️ Slash Only Man: There's A Way Back Home
 
-A small pixel-art action game made in Godot. Fight enemies, progress through five levels, and find your way back home.
+A pixel-art action RPG about fighting your way through the unknown to get back home.
 
-About the Game
+About
 
-This is my first completed game project. It features sword combat, enemies, boss fights, cutscenes, and music across five levels.
+In Slash Only Man: There's A Way Back Home, a warrior is teleported to a random location far from home. Armed with a sword, you'll have to fight your way through monsters, explore unfamiliar places, and take on increasingly powerful enemies to find your way back.
 
 Features
 
-- Five playable levels
-- Sword-based combat
-- Slimes, skeletons, and a boss fight
-- Cutscenes and an ending
-- Background music for different levels
-- Pixel-art visuals
+- 5 levels to fight your way through
+- Sword combat against slimes, skeletons, and other enemies
+- Health, upgrades, and blessings to help you along the way
+- Boss fights that put your skills to the test
+- Cutscenes and an ending to bring the journey to a close
+- Pixel-art graphics and music throughout the game
 
-Controls
+Play the Game
 
-See the in-game controls screen.
+Available on itch.io for Windows and browser:
 
-Download
-
-Play the game on itch.io (https://spiritturtle3.itch.io/slash-only-man-theres-a-way-back-home)
+"Play Slash Only Man: There's A Way Back Home" (https://spiritturtle3.itch.io/slash-only-man-theres-a-way-back-home)
 
 Built With
 
-- Godot Engine 4.6
+- Godot Engine 4.7
 - GDScript
-- Pixel art
 
-Development
+About the Project
 
-This was my first completed game, and I learned a lot about game development while making it. Thanks for checking it out!
+This is my first completed game, made as a project to learn and put my game development skills into practice. It was a chance to take an idea from start to finish and turn it into a playable game.
+
+Thanks for checking it out!
